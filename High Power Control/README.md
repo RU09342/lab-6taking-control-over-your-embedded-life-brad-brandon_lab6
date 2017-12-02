@@ -1,6 +1,6 @@
 # Lab 6: "High Power" Control
 
-The MSP430 Devices safely run off of 3.3V. Higher voltages can damage the microprocessor, but they are sometimees required for other components of a circuit. The question is how can a MSP430 microprocessor be used to drive something that requires a high voltage or a higher current, while protecting the device. A solution to this lies with switching. 
+The MSP430 Devices safely run off of 3.3V. Higher voltages can damage the microprocessor, but they are sometimes required for other components of a circuit. The question is how can a MSP430 microprocessor be used to drive something that requires a high voltage or a higher current, while protecting the device. A solution to this lies with switching. 
 
 ## Switching
 
@@ -30,7 +30,9 @@ The MOSFET switch is a very simple circuit which can be used in a multitude of a
 
 ![sim1](https://user-images.githubusercontent.com/31484781/33511172-410a5862-d6e4-11e7-8e95-0dfe54b5ff24.JPG)
 
-The exact opposite effect was observed in the high-side switch when it was tested. The Mosfet switching speed was very limited compared to that of the relay. At a frequency of just 1.5Hz, the switch was unable to keep up and the output of the circuit began to hang at a high output or low output for extended periods of time. 
+The exact opposite effect was observed in the high-side switch when it was tested. The DMM readings during switching can be seen in the gifs below, with the low-side switch appearing first in the sequence. 
+
+The Mosfet switching speed was very limited compared to that of the relay. At a frequency of just 1.5Hz, the switch was unable to keep up and the output of the circuit began to hang at a high output or low output for extended periods of time. 
 
 ## Limiting Current Draw
 To help reduce the current, an additional resistor can be applied in series with the Power Resistor.
