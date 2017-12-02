@@ -33,4 +33,4 @@ The MOSFET switch is a very simple circuit which can be used in a multitude of a
 The exact opposite effect was observed in the high-side switch when it was tested. The Mosfet switching speed was very limited compared to that of the relay. At a frequency of just 1.5Hz, the switch was unable to keep up and the output of the circuit began to hang at a high output or low output for extended periods of time. 
 
 ## Limiting Current Draw
-To help lesson the current, an additional resistor can be applied in series with the Power Resistor.
+To help reduce the current, an additional resistor can be applied in series with the Power Resistor.
