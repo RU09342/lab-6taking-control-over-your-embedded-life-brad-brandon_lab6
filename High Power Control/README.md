@@ -24,7 +24,7 @@ When the frequency was increased, the sound of the relay switching remained audi
 
 
 ### MOSFET Switching
-The MOSFET switch is a very simple circuit which can be used in a multitude of applications. One of the most important features of the MOSFET Switch is the near zero current it takes to switch the MOSFET from an on to an off state. There are two main architectures, low-side and high-side switch, each requiring a different type of MOSFET. Using the MSP430G2553, drive a power resistor with +12V in the same fashion as the relay. Obtain an MSP430G2553 voltage output along with the voltage through the power resistor. Try to figure out the switching speed limitations of the MOSFET experimentally.
+The MOSFET switch is a very simple circuit which can be used in a multitude of applications. One of the most important features of the MOSFET Switch is the near zero current it takes to switch the MOSFET from an on to an off state. There are two main architectures, low-side and high-side switch, each requiring a different type of MOSFET. The first circuit tested in the lab was the low-side switch. When the input voltage from the microcontroller was high, the output of the low-side switch was low. This can be seen from the schematic and simulation below. As the voltage rises from 0 to 5 V on the input, the output decreases linearly. 
 
 
 The Mosfet Switching of an LED become invisible at a frequency of 1.5Hz. 
