@@ -1,8 +1,12 @@
 # Lab 6: "High Power" Control
-For starters, you will not be dealing with anything that is truly "high power". Instead, what I am considering "high power" is anything with the potential to damage or fry your microcontrollers if you were to drive them directly. The idea behind this part of the lab is to learn how not only to drive things that may require a high voltage or high current, but how to then protect your microcontroller from them.
+
+The MSP430 Devices safely run off of 3.3V. Higher voltages can damage the microprocessor, but they are sometimees required for other components of a circuit. The question is how can a MSP430 microprocessor be used to drive something that requires a high voltage or a higher current, while protecting the device. A solution to this lies with switching. 
 
 ## Switching
-Most of you have used one of the types of switching circuits to control the RGB LEDs. For this part of the lab, you need to focus on the different types of switching circuits along with the differences in inductive and resistive loads.
+
+This lab looks at two types of switching:
+1. Relays
+2. MOSFET Switching
 
 ### Relays
 A relay is a electro-mechanical system which can open and close a switch based on an input. 
