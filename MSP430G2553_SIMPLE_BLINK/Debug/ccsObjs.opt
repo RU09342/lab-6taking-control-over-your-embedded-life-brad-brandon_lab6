@@ -1,0 +1,1 @@
+"./MSP430G2553_SIMPLE_BLINK.obj" "../lnk_msp430g2553.cmd" -llibc.a 
