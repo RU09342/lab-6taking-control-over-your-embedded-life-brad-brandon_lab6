@@ -9,12 +9,21 @@ This lab looks at two types of switching:
 2. MOSFET Switching
 
 ### Relays
-A relay is a electro-mechanical system which can open and close a switch based on an input. 
-![Relay](https://www.phidgets.com/docs/images/1/1d/3051_1_Relay_Diagram.jpg)
-These are extremely useful in situations where large amounts of current need to flow, such as in automotive applications, but they do have their limits. For starters, since the actuation process requires a constant current, sometimes this can be too much for your processor to handle. Second, a lot of these relays require higher than 3.3V, which limits how you can actually turn these things on and off. Using the MSP430G2553, control the state of a relay to drive a power resistor with +12V. Your README for this part should include a screenshot of the output of your MSP and the voltage across the resistor. Try to figure out the switching speed limitations of the relay experimentally.
+
+A relay is an electro-mechanical system which can open and close a switch depending on its input. The way this works is by a magnetic is by supplying a voltage through a coil in the relay, producing a magnetic field that causes the switch to change to open. When the voltage is turned off through the coil, the field is weakened and the switch changes to closed. For this lab a relay is used to drive a 100 ohm power resistor with 12V from the function generator. Using the G2553 to control the gate of an NMOS is how the user can control the state of the relay, whether it is open or closed. 
+
+A schematic of the relay circuit can be seen below:
+![relayschematic](https://user-images.githubusercontent.com/31701000/33510010-179d41e2-d6d5-11e7-943e-1b9d66e985ff.png)
+
+
+An picture of the circuit can be seen here:
+![20171120_222229](https://user-images.githubusercontent.com/31701000/33510005-01d9d550-d6d5-11e7-9e20-9374e115bff2.jpg)
+
+When the frequency was increased, the sound of the relay switching remained audible until 330Hz.
+
 
 ### MOSFET Switching
 The MOSFET switch is a very simple circuit which can be used in a multitude of applications. One of the most important features of the MOSFET Switch is the near zero current it takes to switch the MOSFET from an on to an off state. There are two main architectures, low-side and high-side switch, each requiring a different type of MOSFET. Using the MSP430G2553, drive a power resistor with +12V in the same fashion as the relay. Obtain an MSP430G2553 voltage output along with the voltage through the power resistor. Try to figure out the switching speed limitations of the MOSFET experimentally.
 
-## Deliverables
-Along with what was asked in each part, you will need to utilize the DMM to determine what the current draw from each switch is and if that falls into spec with the Microcontroller. You need to then come up with the best configuration you can think of using to control something that requires large current, but also protects your processor from damage. The reason I am asking you to do this with just the G2553 is: A) The code is just generating a square wave, and B) this part of the lab runs the highest chance of damaging your parts and we have spare G2553's just in case.
+## Limiting Current Draw
+To help lesson the current, an additional resistor can be applied in series with the Power Resistor.
