@@ -16,7 +16,8 @@ A schematic of the relay circuit can be seen below:
 ![relayschematic](https://user-images.githubusercontent.com/31701000/33510010-179d41e2-d6d5-11e7-943e-1b9d66e985ff.png)
 
 
-An picture of the circuit can be seen here:
+A picture of the circuit constructed on a breadboard can be seen here:
+
 ![20171120_222229](https://user-images.githubusercontent.com/31701000/33510005-01d9d550-d6d5-11e7-9e20-9374e115bff2.jpg)
 
 When the frequency was increased, the sound of the relay switching remained audible until 330Hz.
@@ -24,6 +25,9 @@ When the frequency was increased, the sound of the relay switching remained audi
 
 ### MOSFET Switching
 The MOSFET switch is a very simple circuit which can be used in a multitude of applications. One of the most important features of the MOSFET Switch is the near zero current it takes to switch the MOSFET from an on to an off state. There are two main architectures, low-side and high-side switch, each requiring a different type of MOSFET. Using the MSP430G2553, drive a power resistor with +12V in the same fashion as the relay. Obtain an MSP430G2553 voltage output along with the voltage through the power resistor. Try to figure out the switching speed limitations of the MOSFET experimentally.
+
+
+The Mosfet Switching of an LED become invisible at a frequency of 1.5Hz. 
 
 ## Limiting Current Draw
 To help lesson the current, an additional resistor can be applied in series with the Power Resistor.
