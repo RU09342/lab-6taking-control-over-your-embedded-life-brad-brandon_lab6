@@ -32,6 +32,10 @@ The MOSFET switch is a very simple circuit which can be used in a multitude of a
 
 The exact opposite effect was observed in the high-side switch when it was tested. The DMM readings during switching can be seen in the gifs below, with the low-side switch appearing first in the sequence. 
 
+![vid2](https://user-images.githubusercontent.com/31484781/33511518-e62547c6-d6e9-11e7-8546-4a92f7503913.gif)
+
+![vid1](https://user-images.githubusercontent.com/31484781/33511520-e76a34f2-d6e9-11e7-8100-5bcb4b5e0ba8.gif)
+
 The Mosfet switching speed was very limited compared to that of the relay. At a frequency of just 1.5Hz, the switch was unable to keep up and the output of the circuit began to hang at a high output or low output for extended periods of time. 
 
 ## Limiting Current Draw
